@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MiniWebShop.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,16 @@ using System.Windows.Forms;
 
 namespace MiniWebShop
 {
-    public partial class Form1 : Form
+    public partial class InitialView : Form
     {
-        public Form1()
+        public InitialView()
         {
             InitializeComponent();
+        }
+
+        private void InitialView_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
