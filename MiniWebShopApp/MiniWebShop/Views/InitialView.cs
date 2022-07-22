@@ -20,7 +20,15 @@ namespace MiniWebShop
 
         private void InitialView_Load(object sender, EventArgs e)
         {
-            productsDgv.DataSource = GetProducts.Products();
+            LoadProducts();
+
+            
+        }
+
+        private void LoadProducts()
+        {
+            productsDgv.DataSource = null;
+            productsDgv.DataSource = GetProducts.GetAllProducts();
             productsDgv.Columns[0].Visible = false;
             productsDgv.Columns[4].Visible = false;
             productsDgv.Columns[5].Visible = false;
