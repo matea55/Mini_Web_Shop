@@ -50,7 +50,7 @@
             this.productsDgv.Name = "productsDgv";
             this.productsDgv.RowHeadersWidth = 51;
             this.productsDgv.RowTemplate.Height = 24;
-            this.productsDgv.Size = new System.Drawing.Size(641, 167);
+            this.productsDgv.Size = new System.Drawing.Size(473, 167);
             this.productsDgv.TabIndex = 1;
             // 
             // InitialView

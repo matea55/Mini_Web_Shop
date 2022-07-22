@@ -9,7 +9,7 @@ namespace MiniWebShop
 {
     public static class GetProducts
     {
-        public static List<Proizvod> Products()
+        public static List<Proizvod> GetAllProducts()
         {
            List<Proizvod> product;
             using(var db = new WebShopModel())

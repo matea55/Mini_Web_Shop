@@ -55,11 +55,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GetProducts.cs" />
-    <Compile Include="InitialView.cs">
+    <Compile Include="Controllers\GetProducts.cs" />
+    <Compile Include="Views\InitialView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InitialView.Designer.cs">
+    <Compile Include="Views\InitialView.Designer.cs">
       <DependentUpon>InitialView.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Brand.cs" />
@@ -77,7 +77,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>WebShopDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="InitialView.resx">
+    <EmbeddedResource Include="Views\InitialView.resx">
       <DependentUpon>InitialView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
