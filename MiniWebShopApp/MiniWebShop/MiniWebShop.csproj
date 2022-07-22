@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GetProducts.cs" />
     <Compile Include="InitialView.cs">
       <SubType>Form</SubType>
     </Compile>
