@@ -26,6 +26,18 @@ namespace MiniWebShop.Views
         private void CartView_Load(object sender, EventArgs e)
         {
             ShowProductsInCart();
+            ShowTotalPrice();
+        }
+
+        private void ShowTotalPrice()
+        {
+            decimal total = 0;
+            foreach (var item in products)
+            {
+                total += item.Cijena;
+
+            }
+            totalAmountLbl.Text = total.ToString();
         }
 
         private void addToCartBtn_Click(object sender, EventArgs e)
@@ -35,6 +47,8 @@ namespace MiniWebShop.Views
             RemoveProductFromCart();
             
             ShowProductsInCart();
+
+            ShowTotalPrice();
 
         }
 

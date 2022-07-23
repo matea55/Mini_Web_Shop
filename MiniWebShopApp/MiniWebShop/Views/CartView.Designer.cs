@@ -30,8 +30,10 @@
         {
             this.productListInCartDgv = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.addToCartBtn = new System.Windows.Forms.Button();
+            this.removeFromCartBtn = new System.Windows.Forms.Button();
             this.returnToShoppingBtn = new System.Windows.Forms.Button();
+            this.totalAmountLbl = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.productListInCartDgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,16 +57,16 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Proizvodi u kosarici";
             // 
-            // addToCartBtn
+            // removeFromCartBtn
             // 
-            this.addToCartBtn.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addToCartBtn.Location = new System.Drawing.Point(551, 89);
-            this.addToCartBtn.Name = "addToCartBtn";
-            this.addToCartBtn.Size = new System.Drawing.Size(177, 53);
-            this.addToCartBtn.TabIndex = 3;
-            this.addToCartBtn.Text = "Makni proizvod iz kosarice";
-            this.addToCartBtn.UseVisualStyleBackColor = true;
-            this.addToCartBtn.Click += new System.EventHandler(this.addToCartBtn_Click);
+            this.removeFromCartBtn.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeFromCartBtn.Location = new System.Drawing.Point(551, 89);
+            this.removeFromCartBtn.Name = "removeFromCartBtn";
+            this.removeFromCartBtn.Size = new System.Drawing.Size(177, 53);
+            this.removeFromCartBtn.TabIndex = 3;
+            this.removeFromCartBtn.Text = "Makni proizvod iz kosarice";
+            this.removeFromCartBtn.UseVisualStyleBackColor = true;
+            this.removeFromCartBtn.Click += new System.EventHandler(this.addToCartBtn_Click);
             // 
             // returnToShoppingBtn
             // 
@@ -77,13 +79,33 @@
             this.returnToShoppingBtn.UseVisualStyleBackColor = true;
             this.returnToShoppingBtn.Click += new System.EventHandler(this.button1_Click);
             // 
+            // totalAmountLbl
+            // 
+            this.totalAmountLbl.AutoSize = true;
+            this.totalAmountLbl.Location = new System.Drawing.Point(675, 179);
+            this.totalAmountLbl.Name = "totalAmountLbl";
+            this.totalAmountLbl.Size = new System.Drawing.Size(0, 16);
+            this.totalAmountLbl.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(547, 175);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(101, 20);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Ukupno kn";
+            // 
             // deleteProductFromCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.totalAmountLbl);
             this.Controls.Add(this.returnToShoppingBtn);
-            this.Controls.Add(this.addToCartBtn);
+            this.Controls.Add(this.removeFromCartBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.productListInCartDgv);
             this.Name = "deleteProductFromCart";
@@ -99,7 +121,9 @@
 
         private System.Windows.Forms.DataGridView productListInCartDgv;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button addToCartBtn;
+        private System.Windows.Forms.Button removeFromCartBtn;
         private System.Windows.Forms.Button returnToShoppingBtn;
+        private System.Windows.Forms.Label totalAmountLbl;
+        private System.Windows.Forms.Label label2;
     }
 }
