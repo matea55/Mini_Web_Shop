@@ -55,7 +55,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\AddToCart.cs" />
     <Compile Include="Controllers\GetProducts.cs" />
+    <Compile Include="Views\CartView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CartView.Designer.cs">
+      <DependentUpon>CartView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\InitialView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +84,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>WebShopDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\CartView.resx">
+      <DependentUpon>CartView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\InitialView.resx">
       <DependentUpon>InitialView.cs</DependentUpon>
     </EmbeddedResource>
