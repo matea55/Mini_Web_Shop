@@ -24,9 +24,7 @@ namespace MiniWebShop
 
         private void InitialView_Load(object sender, EventArgs e)
         {
-            LoadProducts();
-            
-            
+            LoadProducts();          
 
             
         }

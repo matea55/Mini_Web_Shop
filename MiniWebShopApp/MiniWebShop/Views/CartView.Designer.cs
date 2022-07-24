@@ -34,6 +34,7 @@
             this.returnToShoppingBtn = new System.Windows.Forms.Button();
             this.totalAmountLbl = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.orderBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.productListInCartDgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,11 +98,23 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Ukupno kn";
             // 
+            // orderBtn
+            // 
+            this.orderBtn.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.orderBtn.Location = new System.Drawing.Point(551, 229);
+            this.orderBtn.Name = "orderBtn";
+            this.orderBtn.Size = new System.Drawing.Size(177, 53);
+            this.orderBtn.TabIndex = 7;
+            this.orderBtn.Text = "Narudzba i placanje";
+            this.orderBtn.UseVisualStyleBackColor = true;
+            this.orderBtn.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // deleteProductFromCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.orderBtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.totalAmountLbl);
             this.Controls.Add(this.returnToShoppingBtn);
@@ -125,5 +138,6 @@
         private System.Windows.Forms.Button returnToShoppingBtn;
         private System.Windows.Forms.Label totalAmountLbl;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button orderBtn;
     }
 }
