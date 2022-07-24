@@ -9,14 +9,16 @@ namespace MiniWebShop
 {
     public static class GetProducts
     {
-        public static List<Proizvod> GetAllProducts()
+        public static object GetAllProducts()
         {
-           List<Proizvod> product;
+           
             using(var db = new WebShopModel())
             {
-                product = db.Proizvods.ToList();
+                var product = from p in db.Proizvods                             
+                          select p;
+                return product.ToList();
             }
-            return product;
+            
         }
     }
 }

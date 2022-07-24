@@ -15,7 +15,8 @@ namespace MiniWebShop.Views
     public partial class deleteProductFromCart : Form
     {
         List<Proizvod> products;
-        public deleteProductFromCart(List<Proizvod> products)
+        
+        public deleteProductFromCart (List<Proizvod> products)
         {
             InitializeComponent();
             
@@ -68,6 +69,12 @@ namespace MiniWebShop.Views
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            payBtn orderView = new payBtn(products);
+            orderView.Show();
         }
     }
 }
