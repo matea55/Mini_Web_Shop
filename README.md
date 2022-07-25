@@ -1,1 +1,1 @@
-"# Mini_Web_Shop" 
+Za pokretanje programskog rješenja nije potrebno ništa dodatno postavljati, potrebno je samo pokrenuti aplikaciju
